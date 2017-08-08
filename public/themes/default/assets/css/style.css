@@ -1,0 +1,379 @@
+html, body{
+    height: 100%;
+}
+
+body{
+	margin: 0;
+	font-family: 'Quicksand', sans-serif !important;
+	overflow-x: hidden;
+}
+.intro{
+    height: 93%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: table;
+    width: 100%;
+}
+
+.swiper-container{
+    height: 93%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.firstSlide{
+    background: url("../../../../images/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.secondSlide{
+	background: url("../../../../images/bg2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome{
+    display: table-cell;
+    vertical-align: middle;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.welcome h4{
+	font-style: italic;
+	font-family: "Cardo","Times New Roman",Times,serif;
+}
+
+.welcome p{
+    font-size: 60px;
+}
+
+.circle-me{
+	max-width: 100%;
+    border-radius: 50%;
+}
+
+.circle-about{
+	text-align: center;
+}
+.about-me-section{
+    padding: 85px 0;
+}
+
+.content-title{
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 45px;
+}
+
+.content-title:before{
+	content:"";
+	border: 1px solid;
+	height: 1px;
+	width: 120px;
+	position: absolute;
+    top: 70px;
+}
+
+.lead-text{
+    font-size: 30px;
+}
+
+.content-text{
+    line-height: 27px;
+}
+
+.skills-section{
+    position: relative;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.39);
+    padding: 56px 0;
+}
+
+.skills-background{
+    background-image: url(../../../../images/skills-bg.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+	top: 0;
+}
+
+.overlay{
+	height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.39);
+    width: 100%;
+	top: 0;
+}
+
+.skills-img{
+    position: absolute;
+    height: 65%;
+    top: 0px;
+    left: 0;
+    bottom: 25px;
+    right: 0;
+    margin: auto;
+	transition: all 0.3s;
+}
+
+.progress{
+	background-color: #cacaca;
+    height: 5px;
+}
+
+.progress-bar{
+    width: 83%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.skills-section .col-md-4{
+    margin-bottom: 15px;
+}
+
+.projects-section{
+     padding: 50px 0;
+}
+
+.proj-img{
+	width: 100%;
+	transition: all 0.3s;
+}
+
+.projects-section .col-md-4{
+	margin: 20px 0;
+	overflow: hidden;
+}
+
+.proj-img-container{
+    overflow: hidden;
+}
+
+.proj-img:hover{
+	cursor: pointer;
+	transform: scale(1.3);
+}
+
+.myFooter{
+	background-color: #111;
+    padding: 50px;
+}
+
+.details{
+	color: white;
+}
+
+.my-nav{
+    background-color: #111;
+    border: 0;
+    border-radius: 0;
+	margin: 0;
+}
+
+.navbar-default .navbar-brand{
+	color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: white;
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: white;
+    border-color: black;
+}
+
+.navbar-default .navbar-toggle:hover  .icon-bar, .navbar-default .navbar-toggle:focus  .icon-bar{
+	background-color: black;
+}
+
+.navbar-nav{
+	margin: 0;
+}
+
+.navbar-default .navbar-collapse{
+	padding: 0;
+	text-align: center
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: black;
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+	color: white;
+	background-color: none;
+}
+.navbar-default .navbar-brand:hover{
+	color: white;
+	font-weight: bold;
+}
+.affix{
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.workexp-section{
+    background-color: #2d3e50;
+    color: white;
+    padding: 50px 10px;
+}
+
+
+#htmlCircle, #cssCircle, #jsCircle, #bootstrapCircle, #jqueryCircle{
+	position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    margin: auto;
+}
+
+.progressbar-text{
+	top: 80% !important;
+}
+
+.skill-content{
+    position: absolute;
+    background: #97b4c5;
+    height: 86%;
+    width: 86%;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+	text-align: center;
+}
+
+.skills-img:hover{
+	transform: scale(1.1);
+}
+
+.download-btn{
+	background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    border: none;
+	color:white;
+}
+
+.download-btn:hover, .download-btn:focus{
+	text-decoration:none;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.btn-container{
+    margin: 20px 20px 20px 0;
+}
+
+.btn-up{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 9999;
+    cursor: pointer;
+    background-image: url(../../../../images/top.png);
+    background-size: cover;
+}
+
+.myFooter p{
+    font-size: 45px;
+    margin: 15px;
+}
+.modal-header{
+	padding: 0;
+}
+
+.modal-header .close{
+    position: absolute;
+    z-index: 99999;
+    right: -15px;
+    top: -15px;
+    font-size: 18px;
+    background: white;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+.modal-header .close:hover{
+	color: white;
+	background-color: black;
+}
+
+.modal-body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    overflow: auto;
+    height: 246px;
+}
+
+.fb-circle{
+    height: 70px;
+    width: 70px;
+    border: 2px solid #54dbf1;
+    border-radius: 50%;
+}
+
+.insta-circle{
+    height: 70px;
+    width: 70px;
+    border: 2px solid #6060ab;
+    border-radius: 50%;
+}
+.gmail-circle{
+    height: 70px;
+    width: 70px;
+    border: 2px solid #028a1f;
+    border-radius: 50%;
+}
+.fb-circle:hover{
+	color: #54dbf1;
+	cursor:pointer;
+}
+
+.insta-circle:hover{
+	color: #6060ab;
+	cursor:pointer;
+}
+
+.gmail-circle:hover{
+	color: #028a1f;
+	cursor:pointer;
+}
+.fb-circle:before, .insta-circle:before, .gmail-circle:before{
+	line-height: 65px;
+}
+
+.copyright{
+    margin-top: 27px;
+}
+
+@media screen and (max-width: 480px){
+	.about-me-section{
+		padding: 30px 0;
+	}
+}
