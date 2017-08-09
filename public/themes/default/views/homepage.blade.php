@@ -19,7 +19,7 @@
     <div class="btn-up"></div>
 </div>
 <nav id="myNav" class = "navbar navbar-default my-nav" role = "navigation">
-    <div class = "navbar-header">
+    <div class="navbar-header">
         <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#example-navbar-collapse">
             <span class = "sr-only">Toggle navigation</span>
             <span class = "icon-bar"></span>
@@ -28,7 +28,7 @@
         </button>
         <a class = "navbar-brand" href = "#">Portfolio</a>
     </div>
-    <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+    <div class="collapse navbar-collapse" id = "example-navbar-collapse">
         <ul class = "nav navbar-nav navbar-right">
             <li id="menuHome" class = "active"><a data-id= "#home" href = "javascript:void(0)">Home</a></li>
             <li id="menuAbout"><a data-id= "#about" href = "javascript:void(0)">About</a></li>
@@ -41,13 +41,13 @@
 <div id="about" class="about-me-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 wow fadeInLeft">
-                <h1 class="content-title">About Me</h1>
-                <p class="lead-text"> This can be about section.</p>
-                <p class="content-text">Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation.</p>
-                <p class="content-text">Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery.</p>
-                <div class="btn-container">
-                    <a class="download-btn " href="file/test.docx" download>Download CV</a>
+            <div class="col-md-6">
+                <h1 class="content-title wow fadeInLeft">About Me</h1>
+                <p class="lead-text wow fadeInLeft"> This can be about section.</p>
+                <p class="content-text wow fadeInLeft">Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation.</p>
+                <p class="content-text wow fadeInLeft">Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery.</p>
+                <div class="btn-container wow fadeInLeft">
+                    <a class="download-btn" href="file/test.docx" download>Download CV</a>
                 </div>
             </div>
             <div class="col-md-5 col-md-offset-1 circle-about">
@@ -362,4 +362,3 @@
         </div>
     </div>
 </div>
-

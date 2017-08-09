@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    new WOW().init();
 
     $(".navbar ul li").click(function(){
         var sectionId = $(this).find("a").attr("data-id");
@@ -38,7 +37,6 @@ $(document).ready(function(){
                 animationCircle(jsCircle,0.61, 800, "JavaScript ", "#551112");
                 animationCircle(jqueryCircle,0.7, 800, "Jquery ", "#ff5511");
                 $("#skills").addClass('animated');
-
             }
         }
         if ((windscroll >$("#projects").offset().top-200)&& (windscroll < $("#timeline").offset().top-500)){
@@ -96,6 +94,9 @@ $(document).ready(function(){
         loop: true
     });
 
+    if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        new WOW().init();
+    }
 
 
 });
