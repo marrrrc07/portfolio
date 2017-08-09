@@ -10,6 +10,13 @@ $(document).ready(function(){
     });
 
     var nav = $('#myNav').offset().top;
+    $(".navbar-toggle").click(function(){
+        if (!$(".navbar ").hasClass('navFix')){
+            setTimeout(function(){
+                nav = $('.navbar-header').offset().top;
+            },500)
+        }
+    });
     $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
         if(windscroll >= nav){

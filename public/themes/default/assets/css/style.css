@@ -177,6 +177,13 @@ body{
 	margin: 0;
 }
 
+.my-nav:not(.navFix){
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+
 .navbar-default .navbar-brand{
 	color: white;
 }
@@ -254,7 +261,7 @@ body{
 }
 .navFix{
     position: fixed;
-    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
 }

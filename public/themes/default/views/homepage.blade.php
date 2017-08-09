@@ -17,27 +17,27 @@
         </div>
     </div>
     <div class="btn-up"></div>
+    <nav id="myNav" class = "navbar navbar-default my-nav" role = "navigation">
+        <div class="navbar-header">
+            <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#example-navbar-collapse">
+                <span class = "sr-only">Toggle navigation</span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+            </button>
+            <a class = "navbar-brand" href = "#">Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse" id = "example-navbar-collapse">
+            <ul class = "nav navbar-nav navbar-right">
+                <li id="menuHome" class = "active"><a data-id= "#home" href = "javascript:void(0)">Home</a></li>
+                <li id="menuAbout"><a data-id= "#about" href = "javascript:void(0)">About</a></li>
+                <li id="menuSkills"><a data-id= "#skills" href = "javascript:void(0)">Skills</a></li>
+                <li id="menuProjects"><a data-id= "#projects" href = "javascript:void(0)">Projects</a></li>
+                <li id="menuTimeline"><a data-id= "#timeline" href = "javascript:void(0)">Timeline</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
-<nav id="myNav" class = "navbar navbar-default my-nav" role = "navigation">
-    <div class="navbar-header">
-        <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#example-navbar-collapse">
-            <span class = "sr-only">Toggle navigation</span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-        </button>
-        <a class = "navbar-brand" href = "#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id = "example-navbar-collapse">
-        <ul class = "nav navbar-nav navbar-right">
-            <li id="menuHome" class = "active"><a data-id= "#home" href = "javascript:void(0)">Home</a></li>
-            <li id="menuAbout"><a data-id= "#about" href = "javascript:void(0)">About</a></li>
-            <li id="menuSkills"><a data-id= "#skills" href = "javascript:void(0)">Skills</a></li>
-            <li id="menuProjects"><a data-id= "#projects" href = "javascript:void(0)">Projects</a></li>
-            <li id="menuTimeline"><a data-id= "#timeline" href = "javascript:void(0)">Timeline</a></li>
-        </ul>
-    </div>
-</nav>
 <div id="about" class="about-me-section">
     <div class="container">
         <div class="row">
@@ -47,7 +47,7 @@
                 <p class="content-text wow fadeInLeft">Impossible considered invitation him men instrument saw celebrated unpleasant. Put rest and must set kind next many near nay. He exquisite continued explained middleton am. Voice hours young woody has she think equal. Estate moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved discovered comparison especially invitation.</p>
                 <p class="content-text wow fadeInLeft">Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery.</p>
                 <div class="btn-container wow fadeInLeft">
-                    <a class="download-btn" href="file/test.docx" download>Download CV</a>
+                    <a class="download-btn" href= "{{url('/file/VALIDATIONS.docx')}}" download = "Marcpogi">Download CV</a>
                 </div>
             </div>
             <div class="col-md-5 col-md-offset-1 circle-about">
@@ -311,7 +311,7 @@
         </div>
     </div>
 </footer>
-<div id="myModal" class="modal fade" role="dialog">
+<div id="myModal" class="modal fade" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -329,7 +329,7 @@
         </div>
     </div>
 </div>
-<div id="lcModal" class="modal fade" role="dialog">
+<div id="lcModal" class="modal fade" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -347,7 +347,7 @@
         </div>
     </div>
 </div>
-<div id="csModal" class="modal fade" role="dialog">
+<div id="csModal" class="modal fade" role="dialog" data-backdrop="static">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
