@@ -11,14 +11,14 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h4 class="wow lightSpeedIn">Hello, nice to meet you!</h4>
                         <p class="wow flipInY">I AM Marc-Ian D. Brozo.</p>
-                        <h4 class="wow lightSpeedIn">I am a ready to present to you my portfolio, telling my stories and short presentations.</h4>
+                        <h4 class="wow lightSpeedIn">I am ready to present to you my portfolio, telling my stories and short presentations.</h4>
                 </div>
             </div>
         </div>
     </div>
     <div class="btn-up"></div>
 </div>
-<nav class = "navbar navbar-default my-nav" role = "navigation" data-spy="affix" data-offset-top="630">
+<nav id="myNav" class = "navbar navbar-default my-nav" role = "navigation">
     <div class = "navbar-header">
         <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#example-navbar-collapse">
             <span class = "sr-only">Toggle navigation</span>
@@ -50,9 +50,9 @@
                     <a class="download-btn " href="file/test.docx" download>Download CV</a>
                 </div>
             </div>
-            <div class="col-md-5 col-md-offset-1 circle-about wow fadeInRight">
+            <div class="col-md-5 col-md-offset-1 circle-about">
                 <p>
-                    <img src="images/roundedimg.jpg" class="circle-me">
+                    <img src="images/roundedimg.jpg" class="circle-me wow fadeInRight">
                     </img>
                 </p>
             </div>

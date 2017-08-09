@@ -10,9 +10,14 @@ $(document).ready(function(){
         }, 1000);
     });
 
+    var nav = $('#myNav').offset().top;
     $(window).scroll(function() {
-        var windscroll = $(window).scrollTop();
-
+    var windscroll = $(window).scrollTop();
+        if(windscroll >= nav){
+            $('#myNav').addClass('navFix');
+        }if(windscroll <= nav){
+            $('#myNav').removeClass('navFix');
+        }
         if (windscroll < $("#about").offset().top-400){
             $(".navbar ul li").removeClass("active");
             $("#menuHome").addClass("active");
@@ -90,4 +95,7 @@ $(document).ready(function(){
         speed: 1500,
         loop: true
     });
+
+
+
 });

@@ -193,13 +193,22 @@ body{
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+.navbar-default .navbar-toggle:hover{
     background-color: white;
     border-color: black;
 }
 
 .navbar-default .navbar-toggle:hover  .icon-bar, .navbar-default .navbar-toggle:focus  .icon-bar{
 	background-color: black;
+}
+
+.navbar-default .navbar-toggle:focus{
+    background-color: black;
+    border-color: white;
+}
+
+.navbar-default .navbar-toggle:focus  .icon-bar{
+    background-color: white;
 }
 
 .navbar-nav{
@@ -223,11 +232,6 @@ body{
 	color: white;
 	font-weight: bold;
 }
-.affix{
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
 
 .workexp-section{
     background-color: #2d3e50;
@@ -248,7 +252,12 @@ body{
 .progressbar-text{
 	top: 80% !important;
 }
-
+.navFix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
 .skill-content{
     position: absolute;
     background: #97b4c5;
