@@ -25,11 +25,11 @@
                 <span class = "icon-bar"></span>
                 <span class = "icon-bar"></span>
             </button>
-            <a class = "navbar-brand" href = "#">Portfolio</a>
+            <a class = "navbar-brand" href = "javascript:void(0)">Portfolio</a>
         </div>
         <div class="collapse navbar-collapse" id = "example-navbar-collapse">
             <ul class = "nav navbar-nav navbar-right">
-                <li id="menuHome" class = "active"><a data-id= "#home" href = "javascript:void(0)">Home</a></li>
+                <li id="menuHome" class="active"><a data-id= "#home" href = "javascript:void(0)">Home</a></li>
                 <li id="menuAbout"><a data-id= "#about" href = "javascript:void(0)">About</a></li>
                 <li id="menuSkills"><a data-id= "#skills" href = "javascript:void(0)">Skills</a></li>
                 <li id="menuProjects"><a data-id= "#projects" href = "javascript:void(0)">Projects</a></li>
@@ -290,18 +290,21 @@
                             </div>
                         </div>
                     </div>
+                </li>
             </ul>
         </div>
     </div>
 </div>
 <footer class="myFooter">
     <div class="container">
-        <div class="row details">
-            <div class="col-md-offset-4 col-md-4" style="text-align: center;">
-                <p class="fa fa-facebook-square fb-circle"></p>
-                <p class="fa fa-instagram insta-circle"></p>
-                <p class="fa fa fa-envelope-o gmail-circle"></p>
-            </div>
+            <div class="row details">
+                <div class="icons col-md-offset-4 col-md-4">
+                    <div class="icon-center">
+                        <p class="fa fa-facebook-square fb-circle col-md-4"></p>
+                        <p class="fa fa-instagram insta-circle col-md-4"></p>
+                        <p class="fa fa fa-envelope-o gmail-circle col-md-4"></p>
+                    </div>
+                </div>
         </div>
         <div class="row details copyright">
             <div class="col-md-offset-4 col-md-4" style="text-align: center;">
