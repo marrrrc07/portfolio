@@ -29,11 +29,11 @@
         </div>
         <div class="collapse navbar-collapse" id = "example-navbar-collapse">
             <ul class = "nav navbar-nav navbar-right">
-                <li id="menuHome" class="active"><a data-id= "#home" href = "javascript:void(0)">Home</a></li>
-                <li id="menuAbout"><a data-id= "#about" href = "javascript:void(0)">About</a></li>
-                <li id="menuSkills"><a data-id= "#skills" href = "javascript:void(0)">Skills</a></li>
-                <li id="menuProjects"><a data-id= "#projects" href = "javascript:void(0)">Projects</a></li>
-                <li id="menuTimeline"><a data-id= "#timeline" href = "javascript:void(0)">Timeline</a></li>
+                <li id="menuHome" class="active" data-toggle="collapse" data-target=".navbar-collapse"><a data-id= "#home" href = "javascript:void(0)">Home</a></li>
+                <li id="menuAbout"  data-toggle="collapse" data-target=".navbar-collapse"><a data-id= "#about" href = "javascript:void(0)">About</a></li>
+                <li id="menuSkills" data-toggle="collapse" data-target=".navbar-collapse"><a data-id= "#skills" href = "javascript:void(0)">Skills</a></li>
+                <li id="menuProjects" data-toggle="collapse" data-target=".navbar-collapse"><a data-id= "#projects" href = "javascript:void(0)">Projects</a></li>
+                <li id="menuTimeline" data-toggle="collapse" data-target=".navbar-collapse"><a data-id= "#timeline" href = "javascript:void(0)">Timeline</a></li>
             </ul>
         </div>
     </nav>
@@ -296,23 +296,43 @@
     </div>
 </div>
 <footer class="myFooter">
-    <div class="container">
-            <div class="row details">
-                <div class="icons col-md-offset-4 col-md-4">
-                    <div class="icon-center">
-                        <p class="fa fa-facebook-square fb-circle col-md-4"></p>
-                        <p class="fa fa-instagram insta-circle col-md-4"></p>
-                        <p class="fa fa fa-envelope-o gmail-circle col-md-4"></p>
+    <div class="blur-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="footer-text">Keep Connected</p>
+                    <ul class="footer-tiles">
+                        <li class="fb fa fa-facebook"><a href="https://facebook.com/marrrrc07/" target="_blank"></a></li>
+                        <li class="gmail fa fa-envelope-o"><a href="https://gmail.com/" target="_blank"></a></li>
+                        <li class="insta fa fa-instagram"><a href="https://instagram.com/" target="_blank"></a></li>
+                        <li class="github fa fa-github"><a href="https://github.com/" target="_blank"></a></li>
+                        <li class="twitter fa fa-twitter"><a href="https://twitter.com/" target="_blank"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p class="footer-text">Leave me a note</p>
+                    <div class="error">Please fill up the required field</div>
+                    <div class="form-group">
+                        <form id="contactForm">
+                            {{ csrf_field() }}
+                            <span>Full Name *</span>
+                            <input id ="name" name="fullname"class="form-control">
+                            <span>Email Address *</span>
+                            <input id="emailAdd" name="email" type="email" class="form-control">
+                            <span>Message *</span>
+                            <textarea id="msg" name="message" class="form-control"></textarea>
+                            <button class="btn submit-btn">Submit</button>
+                        </form>
                     </div>
                 </div>
-        </div>
-        <div class="row details copyright">
-            <div class="col-md-offset-4 col-md-4" style="text-align: center;">
-                <i>©2017 Marc-Ian D. Brozo</i>
-                <i> Thanks for viewing my Portfolio </i>
+            </div>
+            <div class="row footer-bottom">
+                <div class="copyright col-md-offset-4 col-md-4">
+                    <span>&copy Marc-Ian D. Brozo</span>
+                    <span>Thanks for viewing my Poitfolio.</span>
+                </div>
             </div>
         </div>
-    </div>
 </footer>
 <div id="myModal" class="modal fade" role="dialog" data-backdrop="static">
     <div class="modal-dialog">

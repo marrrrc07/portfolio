@@ -162,8 +162,43 @@ body{
 }
 
 .myFooter{
-	background-color: #111;
-    padding: 50px;
+    padding: 20px;
+    color:white;
+    position: relative;
+}
+
+.myFooter input, textarea.form-control{
+    border-radius: 0;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: white;
+    resize: vertical;
+}
+.submit-btn{
+    border-radius: 0;
+    color: black;
+    background-color: white;
+}
+
+.submit-btn:hover{;
+    color: white;
+    background-color: black;
+}
+.blur-bg{
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #000000 40%, #000000 40%, #212121 100%, #212121 100%, #212121 100%, #262626 100%, #000000 100%, #000000 100%, #000000 100%, #262626 100%, #262626 100%, #262626 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000000 0%,#000000 40%,#000000 40%,#212121 100%,#212121 100%,#212121 100%,#262626 100%,#000000 100%,#000000 100%,#000000 100%,#262626 100%,#262626 100%,#262626 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000000 0,#000000 24%,#212121 75%,#000000 110%,#000000 100%,#000000 100%,#262626 100%,#262626 100%,#262626 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.footer-text{
+    font-size: 20px;
 }
 
 .details{
@@ -313,21 +348,52 @@ body{
     background-size: cover;
 }
 
-.myFooter p{
-    font-size: 45px;
-    margin: 15px;
+.footer-tiles{
+    color: white;
+    list-style: none;
+    text-align: center;
+    padding: 0;
 }
 
-.icons{
-    display: flex;
+.footer-tiles li{
+    display: inline-block;
+    font-size: 65px;
+    padding: 27px;
+    margin-bottom: 5px;
 }
-.icon-center{
-    margin: 0 auto;
+.fb{
+    width: 25%;
+    background-color: #344d94;
+    border: 1px solid #344d94;
 }
-.modal-header{
-	padding: 0;
+.insta{
+    width: 25%;
+    background: radial-gradient(circle at 30% 170%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#1c46bf 109%);
+    border: 1px solid transparent;
+}
+.gmail{
+    width: 40%;
+    background-color: #ca1212;
+    border: 1px solid #ca1212;
 }
 
+.github{
+    background-color: #ce5319;
+    border: 1px solid #ce5319;
+}
+
+.twitter{
+    background-color: #127eca;
+    border: 1px solid #127eca;
+}
+.github, .twitter{
+    width: 45%;
+}
+
+.fb:hover, .insta:hover, .gmail:hover, .github:hover, .twitter:hover{
+    border:1px solid white;
+    cursor: pointer;
+}
 .modal-header .close{
     position: absolute;
     z-index: 99999;
@@ -354,31 +420,6 @@ body{
     height: 246px;
 }
 
-.fb-circle{
-    height: 70px;
-    width: 70px;
-    border: 2px solid #54dbf1;
-    border-radius: 50%;
-}
-
-.insta-circle{
-    height: 70px;
-    width: 70px;
-    border: 2px solid #6060ab;
-    border-radius: 50%;
-}
-.gmail-circle{
-    height: 70px;
-    width: 70px;
-    border: 2px solid #028a1f;
-    border-radius: 50%;
-    font-size: 40px !important;
-}
-.fb-circle:hover{
-	color: #54dbf1;
-	cursor:pointer;
-}
-
 .navbar-default .navbar-brand:focus{
     color: white;
 }
@@ -400,13 +441,34 @@ body{
     margin-top: 27px;
 }
 
+.error{
+    border: 1px solid #e63939;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 11px;
+    background-color: #9a2b2b;
+}
 
+.footer-tiles a{
+    color: white;
+}
 
+.footer-bottom{
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
 @media screen and (max-width: 480px){
 	.about-me-section{
         padding: 50px 0;
 	}
     .modal-dialog{
         margin-top: 75px;
+    }
+
+    .footer-tiles li{
+        display: block;
+        width: 75%;
+        margin: 0 auto 10px;
     }
 }

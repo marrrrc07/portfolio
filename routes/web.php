@@ -13,3 +13,4 @@
 
 
 Route::get('/'                                         ,         'HomeController@homePage');
+Route::post('/submitMessage'                                         ,         'HomeController@messageSubmit');

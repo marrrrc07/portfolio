@@ -1,12 +1,11 @@
 $(document).ready(function(){
     $('.navbar ul li').click(function(){
         var sectionId = $(this).find('a').attr('data-id');
+        var me = $(this);
         $('html, body').animate({
             scrollTop: $(sectionId).offset().top
         }, 'slow');
-        setTimeout(function(){
-            $('.navbar-collapse').removeClass('in');
-        },700)
+        $('body').scroll();
     });
 
     var nav = $('#myNav').offset().top;
@@ -18,6 +17,23 @@ $(document).ready(function(){
             },500)
         }else{
             nav = temp;
+        }
+    });
+
+    $('.error').hide();
+
+    $('#contactForm').submit(function(e){
+        e.preventDefault();
+        if($('#name').val() == '' || $('#emailAdd').val() == '' || $('.msg').val == ''){
+            $('.error').show();
+        } else{
+        $.ajax({
+            url: "/submitMessage",
+            type:"POST",
+            data: $('#contactForm').serializeArray()
+        }).done(function() {
+           alert("SUCCESS");
+        });
         }
     });
 
