@@ -355,10 +355,19 @@ body{
     padding: 0;
 }
 
-.footer-tiles li{
+.footer-tiles li a{
     display: inline-block;
     font-size: 65px;
     padding: 27px;
+    width: 100%;
+    color: white;
+}
+
+.footer-tiles li a:hover{
+    text-decoration: none;
+}
+.footer-tiles li{
+    display: inline-block;
     margin-bottom: 5px;
 }
 .fb{
@@ -448,10 +457,6 @@ body{
     border-radius: 4px;
     margin-bottom: 11px;
     background-color: #9a2b2b;
-}
-
-.footer-tiles a{
-    color: white;
 }
 
 .footer-bottom{

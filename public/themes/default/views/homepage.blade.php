@@ -302,11 +302,11 @@
                 <div class="col-md-6">
                     <p class="footer-text">Keep Connected</p>
                     <ul class="footer-tiles">
-                        <li class="fb fa fa-facebook"><a href="https://facebook.com/marrrrc07/" target="_blank"></a></li>
-                        <li class="gmail fa fa-envelope-o"><a href="https://gmail.com/" target="_blank"></a></li>
-                        <li class="insta fa fa-instagram"><a href="https://instagram.com/" target="_blank"></a></li>
-                        <li class="github fa fa-github"><a href="https://github.com/" target="_blank"></a></li>
-                        <li class="twitter fa fa-twitter"><a href="https://twitter.com/" target="_blank"></a></li>
+                        <li class="fb"><a class="fa fa-facebook" href="https://facebook.com/marrrrc07/" target="_blank"></a></li>
+                        <li class="gmail"><a class="fa fa-envelope-o" href="https://gmail.com/" target="_blank"></a></li>
+                        <li class="insta"><a class="fa fa-instagram" href="https://instagram.com/" target="_blank"></a></li>
+                        <li class="github"><a class="fa fa-github" href="https://github.com/" target="_blank"></a></li>
+                        <li class="twitter"><a class="fa fa-twitter" href="https://twitter.com/" target="_blank"></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
